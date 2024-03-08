@@ -1,8 +1,3 @@
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
-
 package com.update.data.utils;
 
 public class QueryConstant {
@@ -21,7 +16,6 @@ public class QueryConstant {
     public static final String UPDATE_TIN_NO = "UPDATE employees SET tinNO = ?";
     public static final String UPDATE_PAGIBIG_NO = "UPDATE employees SET pagibigNo = ?";
     public static final String UPDATE_EMPLOYEE_NO = "UPDATE employees SET employeeNo = ?";
-
     private QueryConstant() {
     }
 }

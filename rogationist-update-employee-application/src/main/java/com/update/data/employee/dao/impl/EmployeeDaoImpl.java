@@ -35,7 +35,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
     public boolean updateEmployee(Employee employee)  {
         try  {
             Connection connection;
-            connection = new ConnectionHelper().getConnection("UPDATE Employee SET LAST_NAME = ?, FIRST_NAME = ?, MIDDLE_NAME = ?, POSITION_IN_RC = ?, DATE_EMPLOYED = ?, BIRTHDATE = ?, BIRTHPLACE = ?, SEX = ?, CIVIL_STATUS = ?, CITIZENSHIP = ?, RELIGION = ?, HEIGHT = ?, WEIGHT = ?, EMAIL = ?, SSS_NO = ?, TIN_NO = ?, PAGIBIG_NO = ? WHERE EMPLOYEE_NO = ?"));
+            connection = new ConnectionHelper().getConnection(ADD_EMPLOYEE_STATEMENT));
             PreparedStatement statement;
             statement = connection.prepareStatement();
             statement.setString(1, employee.getLastName());
